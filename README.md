@@ -42,13 +42,19 @@ Please return your solution within 1 week. This is not an expectation of the tim
         conda create -n ve python=3.7
         conda activate ve
 
-2. Install requirements. Some of the dependencies may not be accessible in the condo repo. You may use pip to install all libraries.
+2. If you don't have react, make sure it's installed. Using npm, you can install React by running the following command in your terminal:
+
+```
+variant_search_project$ npm i react react-dom --save-dev
+```
+
+3. Install requirements. Some of the dependencies may not be accessible in the condo repo. You may use pip to install all libraries.
 
 ```
 pip install -r requirements.txt
 ```
 
-3. Run the FLASK application
+4. Run the FLASK application
 
     Change directory to `variant_search_project`. For debugging, you can add `export FLASK_DEBUG=1`
 
