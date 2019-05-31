@@ -1,0 +1,28 @@
+{
+  "name": "static",
+  "version": "1.0.0",
+  "description": "react frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NamibiaLT/variant-search-project.git"
+  },
+  "keywords": [
+    "variant",
+    "gene",
+    "genomic",
+    "search"
+  ],
+  "author": "Namibia Torres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NamibiaLT/variant-search-project/issues"
+  },
+  "homepage": "https://github.com/NamibiaLT/variant-search-project#readme",
+  "devDependencies": {
+    "webpack": "^4.32.2"
+  }
+}
