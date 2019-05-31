@@ -34,6 +34,24 @@ As part of the review process, we may comment on or ask questions about specific
 
 Please return your solution within 1 week. This is not an expectation of the time required to complete the assignment. Rather, it’s meant to provide buffer for busy schedules.
 
-## Questions
+## Running the App:
+1. OPTIONAL: create and activate a new virtual environment
 
-Please ask if any part of the assignment is unclear. Communicate with us as you would with your project team at work.
+    With Anaconda:
+
+        conda create -n ve python=3.7
+        conda activate ve
+
+2. Install requirements. Some of the dependencies may not be accessible in the condo repo. You may use pip to install all libraries.
+
+```
+pip install -r requirements.txt
+```
+
+3. Run the FLASK application
+
+    Change directory to `variant_search_project`. For debugging, you can add `export FLASK_DEBUG=1`
+
+```
+variant_search_project$ export FLASK_APP=server.py
+variant_search_project$ flask run
