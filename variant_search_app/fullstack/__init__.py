@@ -68,4 +68,10 @@ def create_app(script_info=None):
     def server_error_page(error):
         return render_template("errors/500.html"), 500
 
+    ## Clear cache:
+    @app.after_request
+    def add_header(response):
+        response.cache_control.max_age = 1
+        return response
+
     return app
