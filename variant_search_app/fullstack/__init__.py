@@ -41,7 +41,7 @@ def create_app(script_info=None):
     app = Flask(
         __name__,
         #template_folder="../fullstack/templates",
-        #static_folder="../static",
+        static_folder="./static",
     )
 
     Scss(app)
