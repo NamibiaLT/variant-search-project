@@ -1,16 +1,18 @@
 from flask import render_template, Blueprint
-from flask import request
+from flask import request, send_from_directory
 from zipfile import ZipFile
 import pandas as pd
 
 fullstack_blueprint = Blueprint("fullstack", __name__)
 # unzipped_gene_file = ZipFile.extractall(path="/data/variants.tsv.zip", members=None, pwd=None)
-gene_file = pd.read_csv("variants.tsv", sep = "/t")
+# gene_file = pd.read_csv("variants.tsv", sep = "/t")
 
 # INDEX TEMPLATE -  where search bar will be
-@fullstack_blueprint.route("/")
-def index():
-    return render_template('index.html')
+@fullstack_blueprint.route("/<path:filename>")
+def index(filename):
+    print('@@ THIS IS SOMETHING')
+    print(filename)
+    return send_from_directory("./static", filename)
 
 # SHOW ACTION TEMPLATE- where we send users after they hit submit
 @fullstack_blueprint.route("/company_results")

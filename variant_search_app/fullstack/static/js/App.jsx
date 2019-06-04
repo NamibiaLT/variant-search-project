@@ -1,6 +1,6 @@
 import React from "react";
 export default class App extends React.Component {
   render () {
-    return <p> Sample React Code</p>;
+    return <p> THIS IS NEW TEXT </p>;
   }
 }
